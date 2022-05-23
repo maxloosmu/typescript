@@ -1,3 +1,6 @@
+// Command Line Commands:
+// tsc --target es6 squares.ts
+// node squares.js 1 2
 
 let inputs: number[] = [];
 process.argv.forEach(function (val: string, index: number, array) {
