@@ -1,3 +1,7 @@
+// Command Line commands
+// tsc person-sort.ts
+// node person-sort.js
+
 // The interface for the person objects
 interface Person {
     firstName: string;
@@ -22,9 +26,32 @@ const programmers: Person[] = [
     { firstName: 'Anders', lastName: 'Hejslberg'},
     { firstName: 'Edsger', lastName: 'Dijkstra'},
     { firstName: 'Brandon', lastName: 'Eich'},
+    { firstName: 'Alpha', lastName: 'Alpha'},
+    { firstName: 'Zeta', lastName: 'Zeta'},
     // feel free to add as many as you want
 ];
 
+const arranged: Person[] = [
+    { firstName: 'Alpha', lastName: 'Alpha' },
+    { firstName: 'Anders', lastName: 'Hejslberg' },
+    { firstName: 'Barbara', lastName: 'Liskow' },
+    { firstName: 'Brandon', lastName: 'Eich' },
+    { firstName: 'Donald', lastName: 'Knuth' },
+    { firstName: 'Edsger', lastName: 'Dijkstra' },
+    { firstName: 'Guido', lastName: 'Van Rossum' },
+    { firstName: 'Lars', lastName: 'Bak' },
+    { firstName: 'Zeta', lastName: 'Zeta' }
+]
+
+function trySort (first: Person, second: Person) {
+    const firstFullName = getFullName(first);
+    const secondFullName = getFullName(second);
+    return firstFullName.localeCompare(secondFullName);
+}
+function trySort2 (persons: Person[]): Person[] {
+    persons.sort();
+    return persons;
+}
 
 // a naive and straightforward sorting function
 function naiveSortPersons (persons: Person[]): Person[] {
@@ -64,3 +91,9 @@ const sortedSchwartz = schwartzSortPersons(programmers);
 // Output both the sorted array, and the count variable.
 console.log(sortedSchwartz);
 console.log(`When called using the Schwartzian transform approach, the function was called ${count} times`);
+
+// trySort2
+count = 0;
+const trying = trySort2(programmers);
+console.log(trying);
+console.log(`When called using the trySort2 approach, the getFullName function was called ${count} times`);
