@@ -1,5 +1,5 @@
 import { TodoItem } from "./todoItem";
-import { TodoCollection } from "./todoCollection";
+import { TodoCollection } from "./todoCollect1";
 
 let todos: TodoItem[] = [
   new TodoItem(1, "Buy Flowers"), new TodoItem(2, "Get Shoes"),
@@ -15,7 +15,7 @@ console.log(JSON.stringify(todoItem));
 let nextId = 1;
 todoItem = collection.getTodoById(nextId);
 while (todoItem) {
-  console.log(JSON.stringify(todoItem));
+  todoItem.printDetails();
   nextId++;
   todoItem = collection.getTodoById(nextId);
 }

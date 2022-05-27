@@ -3,7 +3,7 @@
     {
       "id": 1,
       "task": "Buy Flowers",
-      "complete": false
+      "complete": true
     },
     {
       "id": 2,
@@ -19,6 +19,11 @@
       "id": 4,
       "task": "Call Joe",
       "complete": true
+    },
+    {
+      "id": 5,
+      "task": "Go to work",
+      "complete": false
     }
   ]
 }
