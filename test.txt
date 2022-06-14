@@ -4,7 +4,7 @@ This line is added after testing branch is created.
 
 More additions based on Git's command line outputs:
 
-typescript % git push -u origin develop
+git push -u origin develop
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
