@@ -1,0 +1,38 @@
+This file is used to test pull requests.  
+
+This line is added after testing branch is created.  
+
+More additions based on Git's command line outputs:
+
+typescript % git push -u origin develop
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 373 bytes | 41.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/maxloosmu/typescript/pull/new/develop
+remote: 
+To github.com:maxloosmu/typescript.git
+ * [new branch]      develop -> develop
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+
+git push -u origin testing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 409 bytes | 45.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'testing' on GitHub by visiting:
+remote:      https://github.com/maxloosmu/typescript/pull/new/testing
+remote: 
+To github.com:maxloosmu/typescript.git
+ * [new branch]      testing -> testing
+Branch 'testing' set up to track remote branch 'testing' from 'origin'.
+
+
+
